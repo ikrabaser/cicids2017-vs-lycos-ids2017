@@ -1,0 +1,88 @@
+===== CIC -> CIC (ortak özellik) =====
+                            precision    recall  f1-score   support
+
+                    BENIGN     0.9976    0.9982    0.9979     30000
+                       Bot     0.9710    0.9744    0.9727       585
+                      DDoS     1.0000    0.9997    0.9998     30000
+             DoS GoldenEye     0.9968    0.9968    0.9968      3085
+                  DoS Hulk     0.9988    0.9995    0.9992     30000
+          DoS Slowhttptest     0.9968    0.9917    0.9942      1568
+             DoS slowloris     0.9969    0.9957    0.9963      1612
+               FTP-Patator     1.0000    0.9994    0.9997      1779
+                Heartbleed     1.0000    1.0000    1.0000         3
+                  PortScan     0.9992    0.9991    0.9991     27208
+               SSH-Patator     1.0000    0.9979    0.9990       966
+  Web Attack - Brute Force     0.7193    0.7959    0.7557       441
+Web Attack - Sql Injection     1.0000    0.5000    0.6667         6
+          Web Attack - XSS     0.3684    0.2500    0.2979       196
+
+                  accuracy                         0.9969    127449
+                 macro avg     0.9318    0.8927    0.9053    127449
+              weighted avg     0.9967    0.9969    0.9968    127449
+
+===== LycoS -> LycoS (ortak özellik) =====
+                            precision    recall  f1-score   support
+
+                    BENIGN     0.9993    0.9992    0.9992     30000
+                       Bot     1.0000    1.0000    1.0000       221
+                      DDoS     1.0000    1.0000    1.0000     28705
+             DoS GoldenEye     0.9902    0.9980    0.9941      2030
+                  DoS Hulk     0.9999    0.9999    0.9999     30000
+          DoS Slowhttptest     0.9943    0.9922    0.9933      1418
+             DoS slowloris     0.9949    0.9943    0.9946      1572
+               FTP-Patator     1.0000    0.9983    0.9992      1199
+                Heartbleed     1.0000    1.0000    1.0000         3
+                  PortScan     0.9999    0.9999    0.9999     27415
+               SSH-Patator     0.9989    1.0000    0.9994       888
+  Web Attack - Brute Force     0.7093    0.7475    0.7279       408
+Web Attack - Sql Injection     1.0000    0.2500    0.4000         4
+          Web Attack - XSS     0.4152    0.3586    0.3848       198
+
+                  accuracy                         0.9977    124061
+                 macro avg     0.9359    0.8813    0.8923    124061
+              weighted avg     0.9976    0.9977    0.9976    124061
+
+===== A: CIC -> LycoS =====
+                            precision    recall  f1-score   support
+
+                    BENIGN     0.5161    0.9992    0.6807    100000
+                       Bot     1.0000    0.7279    0.8425       735
+                      DDoS     1.0000    0.9993    0.9996     95683
+             DoS GoldenEye     0.9896    0.9996    0.9946      6765
+                  DoS Hulk     0.9999    0.9987    0.9993    100000
+          DoS Slowhttptest     0.9956    0.4826    0.6501      4726
+             DoS slowloris     0.9998    0.9975    0.9987      5241
+               FTP-Patator     0.9997    0.9985    0.9991      3998
+                Heartbleed     1.0000    1.0000    1.0000        11
+                  PortScan     1.0000    0.0060    0.0119     91384
+               SSH-Patator     0.9997    0.9993    0.9995      2959
+  Web Attack - Brute Force     0.9742    0.9978    0.9858      1360
+Web Attack - Sql Injection     1.0000    1.0000    1.0000        12
+          Web Attack - XSS     0.9952    0.9470    0.9705       661
+
+                  accuracy                         0.7731    413535
+                 macro avg     0.9621    0.8681    0.8666    413535
+              weighted avg     0.8826    0.7731    0.6997    413535
+
+===== B: LycoS -> CIC =====
+                            precision    recall  f1-score   support
+
+                    BENIGN     0.2995    0.9451    0.4548    100000
+                       Bot     1.0000    0.0144    0.0283      1948
+                      DDoS     1.0000    0.4665    0.6362    100000
+             DoS GoldenEye     0.5861    0.7062    0.6406     10282
+                  DoS Hulk     0.9295    0.2549    0.4001    100000
+          DoS Slowhttptest     0.8492    0.4007    0.5445      5228
+             DoS slowloris     0.9745    0.9373    0.9555      5374
+               FTP-Patator     1.0000    0.6699    0.8023      5931
+                Heartbleed     1.0000    0.9091    0.9524        11
+                  PortScan     0.1098    0.0076    0.0142     90694
+               SSH-Patator     1.0000    0.9233    0.9601      3219
+  Web Attack - Brute Force     0.9930    0.8707    0.9279      1470
+Web Attack - Sql Injection     1.0000    0.5238    0.6875        21
+          Web Attack - XSS     0.9966    0.9126    0.9528       652
+
+                  accuracy                         0.4486    424830
+                 macro avg     0.8384    0.6101    0.6398    424830
+              weighted avg     0.6163    0.4486    0.4117    424830
+

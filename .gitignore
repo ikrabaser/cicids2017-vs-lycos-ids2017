@@ -1,0 +1,12 @@
+# Veri setleri (GB boyutunda, repoya konmaz; README'deki indirme adımlarına bak)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editör
+.vscode/

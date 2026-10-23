@@ -1,0 +1,5 @@
+deney,accuracy,makro_F1
+CIC -> CIC (ortak özellik),0.9969,0.9053
+LycoS -> LycoS (ortak özellik),0.9977,0.8923
+A: CIC -> LycoS,0.7731,0.8666
+B: LycoS -> CIC,0.4486,0.6398
